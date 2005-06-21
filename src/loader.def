@@ -1,0 +1,19 @@
+;[]-----------------------------------------------------------------[]
+;|   STRINGS.DEF -- strings definition	file			     |
+;[]-----------------------------------------------------------------[]
+;
+; $Copyright: 2005$
+; $Revision: 1.4 $
+;
+
+LIBRARY loader.dll INITINSTANCE
+CODE PRELOAD EXECUTEREAD FIXED NONDISCARDABLE
+DATA SINGLE READWRITE PRELOAD SHARED
+HEAPSIZE 0x1000, 0x100000
+DESCRIPTION 'Loader libraries'
+
+IMPORTS
+
+EXPORTS
+;Fast string functions
+_mainCRTStartup
